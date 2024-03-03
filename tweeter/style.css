@@ -8,13 +8,13 @@ body {
 }
 
 .wrapper {
-  height: 330px;
+  height: 340px;
   overflow: hidden;
 }
 
 header {
   max-width: 1000px;
-  height: 32px;
+  height: 40px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -50,7 +50,7 @@ header .right-panel input {
   height: 28px;
   border-radius: 15px;
   border: none;
-  background-color: #f5f8fa;
+  background-color: #e1e8ed;
 }
 
 header .right-panel input::placeholder {
@@ -69,6 +69,7 @@ header .right-panel button {
   border: none;
   border-radius: 15px;
   padding: 0 20px;
+  color: white;
 }
 .banner {
   width: 100%;
@@ -102,10 +103,11 @@ header .right-panel button {
 }
 
 .main .stats .stats-item {
+  width: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .main .avatar {
@@ -120,10 +122,11 @@ header .right-panel button {
 
 .main .right-panel .follow {
   height: 30px;
-  background-color: #f5f8fa;
+  background-color: #e1e8ed;
   border: 1px solid #1da1f2;
   border-radius: 15px;
   padding: 0 20px;
+  color: #1da1f2;
 }
 .main .right-panel .more {
   height: 30px;
