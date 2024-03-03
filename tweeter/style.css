@@ -1,0 +1,133 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+}
+
+.wrapper {
+  height: 330px;
+  overflow: hidden;
+}
+
+header {
+  max-width: 1000px;
+  height: 32px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .nav ul {
+  display: flex;
+  gap: 12px;
+  list-style-type: none;
+}
+
+header .nav ul li {
+  font-size: 14px;
+  color: #657786;
+}
+
+header .nav ul li i {
+  margin-right: 6px;
+}
+
+header .logo {
+  color: #1da1f2;
+}
+
+header .right-panel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .right-panel input {
+  height: 28px;
+  border-radius: 15px;
+  border: none;
+  background-color: #f5f8fa;
+}
+
+header .right-panel input::placeholder {
+  padding-left: 12px;
+}
+
+header .right-panel .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+header .right-panel button {
+  height: 30px;
+  background-color: #1da1f2;
+  border: none;
+  border-radius: 15px;
+  padding: 0 20px;
+}
+.banner {
+  width: 100%;
+  height: 250px;
+  background-color: #1da1f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: -50px;
+}
+
+.main div {
+  display: flex;
+  align-items: center;
+}
+
+.main .stats {
+  display: flex;
+  gap: 10px;
+}
+
+.main .stats .stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+
+.main .avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  border: 3px solid white;
+  background-image: url('./img/avatar.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.main .right-panel .follow {
+  height: 30px;
+  background-color: #f5f8fa;
+  border: 1px solid #1da1f2;
+  border-radius: 15px;
+  padding: 0 20px;
+}
+.main .right-panel .more {
+  height: 30px;
+  padding: 0 20px;
+  background-color: inherit;
+  border: none;
+}
