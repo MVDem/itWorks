@@ -1,0 +1,330 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.exercise {
+  display: flex;
+  gap: 20px;
+}
+
+/**Part 1
+*/
+
+#parent {
+  display: inline-block;
+  background-color: blue;
+  width: 300px;
+  height: 300px;
+}
+
+.child {
+  background-color: red;
+}
+
+#child-1 {
+  position: absolute;
+  width: 300px;
+  height: 20px;
+  top: 50px;
+}
+
+#child-2 {
+  position: absolute;
+  height: 300px;
+  width: 20px;
+  left: 50px;
+}
+
+/**My version
+*/
+
+.container1 {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  position: relative;
+}
+
+.block1 {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+}
+.block2 {
+  width: 230px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: blue;
+}
+.block3 {
+  width: 50px;
+  height: 230px;
+  position: absolute;
+  bottom: 0;
+  background-color: blue;
+}
+.block4 {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: blue;
+}
+
+/**Part 2
+*/
+
+#background {
+  background-color: mediumpurple;
+  height: 150px;
+  width: 300px;
+  position: relative;
+}
+
+.text {
+  color: black;
+  font-family: sans-serif;
+}
+
+#money {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+#time {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.bar {
+  width: 20px;
+  background-color: darkgrey;
+}
+
+#bar-1 {
+  height: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#bar-2 {
+  height: 70px;
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+}
+
+#bar-3 {
+  height: 100px;
+  position: absolute;
+  bottom: 10px;
+  left: 90px;
+}
+
+#bar-4 {
+  height: 85px;
+  position: absolute;
+  bottom: 10px;
+  left: 130px;
+}
+
+#bar-5 {
+  height: 75px;
+  position: absolute;
+  bottom: 10px;
+  left: 170px;
+}
+
+#bar-6 {
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 210px;
+}
+
+/**My version
+*/
+
+.container2 {
+  width: 300px;
+  height: 140px;
+  font-family: sans-serif;
+  background-color: mediumpurple;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.subTitle {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+}
+
+.myBar {
+  margin: 0 10px;
+  width: 20px;
+  height: 50px;
+  background-color: darkgrey;
+}
+#myBar1 {
+  height: 20px;
+}
+#myBar2 {
+  height: 70px;
+}
+#myBar3 {
+  height: 100px;
+}
+#myBar4 {
+  height: 85px;
+}
+#myBar5 {
+  height: 75px;
+}
+#myBar6 {
+  height: 50px;
+}
+
+/**Part 3
+*/
+
+#red-background {
+  background-color: red;
+  width: 400px;
+  height: 250px;
+  border-radius: 5%;
+  position: relative;
+  bottom: 10px;
+}
+
+.silver-edges {
+  background-color: grey;
+  height: 85px;
+  width: 85px;
+  border-top-left-radius: 7%;
+  border-top-right-radius: 7%;
+  border: 2px solid grey;
+}
+
+#edge-1 {
+  position: absolute;
+  right: 0;
+}
+
+#white-space {
+  width: 230px;
+  height: 190px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 85px;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+}
+
+/**My version
+*/
+
+.container3 {
+  height: 250px;
+  width: 400px;
+  background-color: red;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.block-gray {
+  height: 100px;
+  background-color: gray;
+}
+.block-white {
+  position: absolute;
+  width: 230px;
+  height: 190px;
+  background-color: white;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0 0 15px 15px;
+}
+
+/** Part 4
+*/
+
+#chocolate {
+  background-color: black;
+  display: inline-block;
+  padding: 4px;
+}
+#middle {
+  background-color: darkred;
+  height: 5px;
+  width: 385px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+.block {
+  background-color: #66320e;
+  width: 90px;
+  height: 90px;
+  margin: 3px;
+}
+#block-1 {
+  float: right;
+}
+#block-2 {
+  float: right;
+}
+#block-3 {
+  float: right;
+}
+#block-5 {
+  float: left;
+}
+#block-6 {
+  float: left;
+}
+#block-7 {
+  float: left;
+}
+/**My version
+*/
+
+.container4 {
+  background-color: black;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.row {
+  width: max-content;
+  min-height: 50px;
+  display: flex;
+  gap: 6px;
+}
+.innerBlock {
+  width: 90px;
+  height: 90px;
+  background-color: #66320e;
+}
+.redLine {
+  width: 100%;
+  margin: -2px;
+  height: 5px;
+  background-color: darkred;
+}

@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 15fr 1fr;
+  grid-template-areas:
+    'contacts messages'
+    'contacts msg-inpit';
+}
+
+.contacts {
+  grid-area: contacts;
+  background-color: #c154c1;
+}
+
+.contacts h2 {
+  padding: 12px;
+  font-size: 16px;
+}
+
+.contacts-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  background-color: inherit;
+}
+
+.contact-item {
+  margin: 100px 5px 0;
+  background-color: #df73ff;
+  border-radius: 6px;
+  padding: 6px;
+  font-size: 14px;
+}
+
+.messages {
+  grid-area: messages;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  padding: 40px 20px;
+  align-items: center;
+}
+
+.sent {
+  display: grid;
+  justify-items: end;
+}
+
+.sent p {
+  background-color: lightgreen;
+}
+
+.received {
+  display: grid;
+  justify-items: start;
+}
+
+.received p {
+  background-color: lightgrey;
+}
+
+.message-item {
+  width: max-content;
+  background-color: lightgrey;
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 18px;
+  border-radius: 6px;
+  font-family: 'Gloria Hallelujah';
+}
+
+.message-item span {
+  margin-left: 12px;
+  font-size: 10px;
+}
+.msg-input {
+  grid-area: msg-inpit;
+  background-color: wheat;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.msg-input button {
+  background-color: #c154c1;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+}
+.msg-input button {
+  background-color: #c154c1;
+  border: none;
+}
