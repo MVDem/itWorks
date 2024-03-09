@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 5px;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 5vh 1fr 5vh;
+}
+
+.header {
+  width: 100%;
+  background-color: #565656;
+}
+
+.header .nav-bar {
+  max-width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+.header .nav-bar .header-btn {
+  width: 150px;
+  height: 32px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main {
+  max-width: 1100px;
+  height: 90vh;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #d7cec7;
+  display: grid;
+  grid-template-columns: 1fr 3fr 300px;
+  grid-template-areas:
+    'left-first   center  right-second'
+    'left-second  center  right-second'
+    'left-third   center  right-first'
+    'left-fourth  center  right-first';
+  gap: 20px;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+.main .left-container {
+  width: 18vh;
+  height: 18vh;
+  background-color: #c09f80;
+  text-align: center;
+  text-justify: auto;
+  font-size: 90px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.main .left-container:nth-child(1) {
+  grid-area: left-first;
+  background-color: #76323f;
+  color: white;
+}
+.main .left-container:nth-child(2) {
+  grid-area: left-second;
+}
+.main .left-container:nth-child(3) {
+  grid-area: left-third;
+  background-color: #76323f;
+  color: white;
+}
+.main .left-container:nth-child(4) {
+  grid-area: left-fourth;
+}
+
+.main .center-container {
+  grid-area: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #c09f80;
+}
+
+.main .center-container .inner-container {
+  text-align: justify;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.main .center-container .inner-container img {
+  width: 100%;
+}
+
+.main .right-container-second {
+  grid-area: right-second;
+  background-color: #c09f80;
+}
+
+.main .right-container-first {
+  grid-area: right-first;
+  background-color: #c09f80;
+  text-align: justify;
+}
+
+.main .right-container-first .top {
+  background-color: #565656;
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.footer {
+  width: 100%;
+  background-color: #565656;
+}
